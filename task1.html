@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Day-6</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          body {
+               font-family: Arial, Helvetica, sans-serif;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 100vw;
+               height: 100vh;
+               background-color: #f4f4f4;
+          }
+
+          .container {
+               display: flex;
+               border: 1px solid black;
+               width: 800px;
+               height: 500px;
+               background-color: white;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+
+          .container1 {
+               width: 60px;
+               padding-top: 20px;
+               display: flex;
+               flex-direction: column;
+          }
+
+          .container1 a {
+               display: block;
+               width: 40px;
+               height: 40px;
+               margin: 10px 0;
+               border-radius: 5px;
+               transition: transform 0.3s ease;
+          }
+
+          .container1 a:hover {
+               transform: scale(1.2);
+          }
+
+          .container1 a.green {
+               background-color: #4CAF50;
+          }
+
+          .container1 a.blue {
+               background-color: #2196F3;
+          }
+
+          .container1 a.red {
+               background-color: #f44336;
+          }
+
+          .container1 a.gray {
+               background-color: #555;
+          }
+
+          .container2 {
+               flex: 1;
+               padding: 30px;
+          }
+
+          .container2 h2 {
+               margin-bottom: 15px;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <div class="container1">
+               <a href="#" class="green"></a>
+               <a href="#" class="blue"></a>
+               <a href="#" class="red"></a>
+               <a href="#" class="gray"></a>
+          </div>
+          <div class="container2">
+               <h2>Hoverable Sidenav Buttons</h2>
+               <p>Hover over the buttons in the left side navigation to open them.</p>
+          </div>
+     </div>
+</body>
+
+</html>
