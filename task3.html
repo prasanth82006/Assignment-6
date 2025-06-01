@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Window</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('image1.jpg') center/cover no-repeat;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      position: relative;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 60px 30px 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 320px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .avatar {
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .avatar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: rgba(37, 35, 35, 0.9);
+      color: white;
+      font-size: 14px;
+       box-shadow: 0px 2px white;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-group input {
+      margin-right: 8px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: #00cc00;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+       box-shadow: 2px 2px white;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="avatar">
+      <img src="p4.jpg" alt="User Avatar" />
+    </div>
+    <h2>LOGIN WINDOW</h2>
+    <form action="/login" method="POST">
+      <div class="input-group">
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required />
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Your Password" required />
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">Agree with <a href="#" target="_blank">Terms & Conditions</a></label>
+      </div>
+      <button type="submit" class="login-btn">LOGIN</button>
+    </form>
+  </div>
+</body>
+</html>
